@@ -1,17 +1,13 @@
 package com.vsu.app.entity;
 
 public enum Role {
-    Participant ("Участник"),
-    Administrator ("Администратор"),
-    Judge ("Судья");
+    EXHIBITOR ("Участник"),
+    ADMINISTRATOR ("Администратор"),
+    JUDGE ("Судья");
 
     private final String title;
 
     Role(String title) {
         this.title = title;
-    }
-
-    public String getTitle() {
-        return title;
     }
 }
