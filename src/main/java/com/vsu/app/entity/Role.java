@@ -9,5 +9,6 @@ public enum Role {
 
     Role(String title) {
         this.title = title;
+
     }
 }

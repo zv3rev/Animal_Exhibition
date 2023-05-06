@@ -10,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
 
 @Controller
 @AllArgsConstructor
@@ -26,7 +27,7 @@ public class SignUpController {
     }
 
     @PostMapping
-    public String register(@ModelAttribute("profile") CreateProfileRequest profileRequest, HttpSession session){
+    public String register(@ModelAttribute("profile") @Valid CreateProfileRequest profileRequest, HttpSession session){
         ProfileDto profileDto = profileMappingUtils.mapToProfileDto(profileRequest);
         if(profileService.add(profileMappingUtils.mapToProfile(profileDto))){
             profileDto = profileService.get(profileDto.getUsername());
