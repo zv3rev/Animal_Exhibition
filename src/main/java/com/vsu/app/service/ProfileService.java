@@ -17,15 +17,6 @@ public class ProfileService {
         profile.setPassword(String.valueOf(profile.getPassword().hashCode()));
         return profileRepository.create(profile);
     }
-
-    public ProfileDto validate(String username, String password){
-        Profile profile = profileRepository.getByUsername(username);
-        if (profile.getPassword().equals(String.valueOf(password.hashCode()))){
-            return profileMappingUtils.mapToProfileDto(profile);
-        }
-        return null;
-    }
-
     public ProfileDto get(String username){
         return profileMappingUtils.mapToProfileDto(profileRepository.getByUsername(username));
     }

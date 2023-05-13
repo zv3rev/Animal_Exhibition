@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="Added a registration and authorization form">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/exception/GlobalValidationExceptionHandler.java" afterDir="false" />
+    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="Added validation for the registration form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/SignUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/entity/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/entity/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/request/CreateProfileRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/request/CreateProfileRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/SignInController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/SignUpController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/WelcomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/user/ProfilePageController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/filter/LoggedFilter.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +27,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -56,7 +61,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/YandexDisk/Documents/ПММ 3/Seti/UdpEchoServer",
+    "last_opened_file_path": "C:/YandexDisk/Documents/ПММ 3/Java/Animal_Exhibition",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -107,7 +112,9 @@
       <workItem from="1682494011579" duration="3460000" />
       <workItem from="1682579682583" duration="35384000" />
       <workItem from="1683039342641" duration="151000" />
-      <workItem from="1683295203234" duration="15005000" />
+      <workItem from="1683295203234" duration="19393000" />
+      <workItem from="1683369321240" duration="7092000" />
+      <workItem from="1683961161290" duration="529000" />
     </task>
     <task id="LOCAL-00001" summary="Added Entity-classes">
       <created>1682265110194</created>
@@ -123,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683305739350</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added validation for the registration form">
+      <created>1683362034730</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683362034730</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +154,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="feature/refactorToRestControllers" />
                       </list>
                     </value>
                   </entry>
@@ -158,17 +172,7 @@
     </ignored-roots>
     <MESSAGE value="Added Entity-classes" />
     <MESSAGE value="Added a registration and authorization form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a registration and authorization form" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/vsu/app/exception/GlobalValidationExceptionHandler.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added validation for the registration form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added validation for the registration form" />
   </component>
 </project>
