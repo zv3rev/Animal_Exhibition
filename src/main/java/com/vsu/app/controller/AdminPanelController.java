@@ -7,6 +7,7 @@ import com.vsu.app.service.ProfileService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.Collection;
 
 @AllArgsConstructor
@@ -26,7 +27,7 @@ public class AdminPanelController {
     }
 
     @PutMapping("/users/{userId}")
-    public ProfileDto editUser(@PathVariable("adminId") Long adminId, @PathVariable("userId") Long userId, @RequestBody EditProfileRequest editProfileRequest) throws UnauthorizedAccessException {
+    public ProfileDto editUser(@PathVariable("adminId") Long adminId, @PathVariable("userId") Long userId, @RequestBody @Valid EditProfileRequest editProfileRequest) throws UnauthorizedAccessException {
         return  profileService.edit(userId, adminId, editProfileRequest);
     }
 }
