@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="Added validation for the registration form">
+    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="Added new REST-CONTROLLERS">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/AdminPanelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/ProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/SignUpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/exception/UnauthorizedAccessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/handler/UnauthorizedAccessExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/request/EditProfileRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/SignInController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/SignUpController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/WelcomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/user/ProfilePageController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/filter/LoggedFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/dto/ProfileDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/dto/ProfileDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/exception/GlobalValidationExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/handler/GlobalValidationExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/ProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/ProfileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/request/CreateProfileRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/request/CreateProfileRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/utilities/ProfileMappingUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/utilities/ProfileMappingUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,10 +73,11 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "preferences.editor",
     "spring.configuration.checksum": "44e68ee0995f65320983df8ffc0beb8c",
     "vue.rearranger.settings.migration": "true"
   },
@@ -115,6 +123,7 @@
       <workItem from="1683295203234" duration="19393000" />
       <workItem from="1683369321240" duration="7092000" />
       <workItem from="1683961161290" duration="529000" />
+      <workItem from="1684348004200" duration="5593000" />
     </task>
     <task id="LOCAL-00001" summary="Added Entity-classes">
       <created>1682265110194</created>
@@ -137,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683362034730</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Removed JSP-pages">
+      <created>1683965493014</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683965493014</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +189,8 @@
     <MESSAGE value="Added Entity-classes" />
     <MESSAGE value="Added a registration and authorization form" />
     <MESSAGE value="Added validation for the registration form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added validation for the registration form" />
+    <MESSAGE value="Removed JSP-pages" />
+    <MESSAGE value="Added new REST-CONTROLLERS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new REST-CONTROLLERS" />
   </component>
 </project>
