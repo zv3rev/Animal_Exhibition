@@ -1,4 +1,4 @@
-package com.vsu.app.exception;
+package com.vsu.app.handler;
 
 import lombok.extern.java.Log;
 import org.springframework.http.ResponseEntity;

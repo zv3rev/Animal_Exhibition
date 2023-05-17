@@ -3,6 +3,7 @@ package com.vsu.app.request;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.Range;
 
 import javax.validation.constraints.*;
 
@@ -24,7 +25,6 @@ public class CreateProfileRequest {
     @Email(message = "Incorrect email format")
     private String email;
 
-    @Min(value = 11, message = "Phone number must contain 11 digits")
-    @Digits(integer = 11,fraction = 0, message = "Phone number can contain only numbers")
+    @Range(min = 10000000000L, max = 99999999999L, message = "Phone number must contain 11 digits")
     private Long phone;
 }

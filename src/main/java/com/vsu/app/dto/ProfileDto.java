@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 public class ProfileDto {
     Long id;
     String username;
-    String password;
     String fio;
     String email;
     Long phone;
