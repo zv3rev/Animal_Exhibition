@@ -71,7 +71,8 @@ public class ProfileService {
         }
     }
 
-    private boolean checkAdminRole(Long admin_id){
+    //TODO: нужно ли выносить в отдельный класс, и если да то какой
+    public boolean checkAdminRole(Long admin_id){
         Profile admin = profileRepository.getById(admin_id);
         return admin != null && admin.getRole() == Role.ADMINISTRATOR;
     }
