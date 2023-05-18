@@ -5,6 +5,8 @@ import com.vsu.app.repository.SpeciesRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @AllArgsConstructor
 public class SpeciesService {
@@ -24,5 +26,9 @@ public class SpeciesService {
         }
 
         return speciesRepository.delete(speciesId);
+    }
+
+    public List<String> getAll() {
+        return speciesRepository.getAll();
     }
 }

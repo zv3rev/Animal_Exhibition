@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="Added creating species">
+    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="Added delete species">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/SpeciesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/SpeciesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/SpeciesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/SpeciesRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/SpeciesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/SpeciesService.java" afterDir="false" />
@@ -79,6 +80,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.vsu.app.dto" />
       <recent name="com.vsu.app.service" />
       <recent name="com.vsu.app.request" />
     </key>
@@ -161,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684413039704</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added delete species">
+      <created>1684413935616</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684413935616</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,13 +187,28 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="feature/addSpecies" />
                       </list>
                     </value>
                   </entry>
                 </map>
               </option>
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="feature/addSpecies" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -201,6 +225,7 @@
     <MESSAGE value="Added new REST-CONTROLLERS" />
     <MESSAGE value="Added RequestBody to SignUpController" />
     <MESSAGE value="Added creating species" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added creating species" />
+    <MESSAGE value="Added delete species" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added delete species" />
   </component>
 </project>
