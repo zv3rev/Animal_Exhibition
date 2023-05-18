@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="Added RequestBody to SignUpController">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/SpeciesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/SpeciesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="Added creating species">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/SpeciesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/SpeciesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/SpeciesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/SpeciesRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/SpeciesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/SpeciesService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684411566972</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added creating species">
+      <created>1684413039704</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684413039704</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +200,7 @@
     <MESSAGE value="Removed JSP-pages" />
     <MESSAGE value="Added new REST-CONTROLLERS" />
     <MESSAGE value="Added RequestBody to SignUpController" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added RequestBody to SignUpController" />
+    <MESSAGE value="Added creating species" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added creating species" />
   </component>
 </project>

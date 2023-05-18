@@ -11,10 +11,18 @@ public class SpeciesService {
     private SpeciesRepository speciesRepository;
     private ProfileService profileService;
 
-    public boolean add(Long admin_id, String name) throws UnauthorizedAccessException {
-        if (!profileService.checkAdminRole(admin_id)){
+    public boolean add(Long adminId, String name) throws UnauthorizedAccessException {
+        if (!profileService.checkAdminRole(adminId)){
             throw new UnauthorizedAccessException("Only administrator can add species");
         }
         return  speciesRepository.create(name);
+    }
+
+    public boolean delete(Long adminId, Long speciesId) throws UnauthorizedAccessException {
+        if (!profileService.checkAdminRole(adminId)){
+            throw new UnauthorizedAccessException("Only administrator can delete species");
+        }
+
+        return speciesRepository.delete(speciesId);
     }
 }

@@ -8,11 +8,18 @@ import org.springframework.stereotype.Repository;
 @AllArgsConstructor
 public class SpeciesRepository {
     public static final String INSERT_QUERY = "INSERT INTO species (name) VALUES (?)";
+    public static final String DELETE_QUERY = "DELETE FROM species WHERE id = ?;";
     private final JdbcTemplate jdbcTemplate;
 
     public boolean create(String name) {
         return jdbcTemplate.update(
                 INSERT_QUERY,
                 name) == 1;
+    }
+
+    public boolean delete(Long id) {
+        return jdbcTemplate.update(
+                DELETE_QUERY,
+                id) == 1;
     }
 }
