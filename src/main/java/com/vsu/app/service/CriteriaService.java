@@ -24,6 +24,14 @@ public class CriteriaService {
         return criteriaRepository.create(criteriaMappingUtils.mapToCriteria(request));
     }
 
+    public boolean delete(Long adminId, Long criteriaId) throws UnauthorizedAccessException {
+        if (!checkAdminRole(adminId)){
+            throw new UnauthorizedAccessException("Only admin can delete criteria");
+        }
+
+        return criteriaRepository.delete(criteriaId);
+    }
+
     private boolean checkAdminRole(Long admin_id){
         Profile admin = profileRepository.getById(admin_id);
         return admin != null && admin.getRole() == Role.ADMINISTRATOR;

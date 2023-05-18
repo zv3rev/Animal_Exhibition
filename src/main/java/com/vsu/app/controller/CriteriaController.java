@@ -18,4 +18,10 @@ public class CriteriaController {
     public boolean addCriteria(@PathVariable("adminId") Long adminId, @RequestBody @Valid CreateCriteriaRequest createCriteriaRequest) throws UnauthorizedAccessException {
         return criteriaService.add(adminId,createCriteriaRequest);
     }
+
+    @DeleteMapping("/{criteriaId}")
+    public boolean deleteCriteria(@PathVariable("adminId") Long adminId, @PathVariable("criteriaId") Long criteriaId) throws UnauthorizedAccessException {
+        return criteriaService.delete(adminId, criteriaId);
+    }
+
 }
