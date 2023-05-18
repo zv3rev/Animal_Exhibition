@@ -71,7 +71,7 @@ public class ProfileService {
         }
     }
 
-    //TODO: нужно ли выносить в отдельный класс, и если да то какой
+    //TODO: оставить так или сделать JWT?
     public boolean checkAdminRole(Long admin_id){
         Profile admin = profileRepository.getById(admin_id);
         return admin != null && admin.getRole() == Role.ADMINISTRATOR;
