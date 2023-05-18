@@ -4,6 +4,7 @@ import com.vsu.app.request.CreateProfileRequest;
 import com.vsu.app.service.ProfileService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,7 +17,7 @@ public class SignUpController {
     private ProfileService profileService;
 
     @PostMapping
-    public boolean signUpProfile(@Valid CreateProfileRequest profileRequest){
+    public boolean signUpProfile(@RequestBody @Valid CreateProfileRequest profileRequest){
         return profileService.add(profileRequest);
     }
 }
