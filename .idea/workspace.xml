@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="Added deleting breed">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/BreedController.java" afterDir="false" />
+    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="Added getting breed in species">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/BreedRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/BreedRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/BreedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/BreedService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +120,7 @@
       <workItem from="1683369321240" duration="7092000" />
       <workItem from="1683961161290" duration="529000" />
       <workItem from="1684348004200" duration="5593000" />
-      <workItem from="1684443817892" duration="9846000" />
+      <workItem from="1684443817892" duration="10771000" />
     </task>
     <task id="LOCAL-00001" summary="Added Entity-classes">
       <created>1682265110194</created>
@@ -197,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684420226037</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added getting breed in species">
+      <created>1684527638836</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684527638836</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +251,8 @@
     <MESSAGE value="Added get all species" />
     <MESSAGE value="Added adding breed" />
     <MESSAGE value="Added deleting breed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added deleting breed" />
+    <MESSAGE value="Added getting breed in species" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added getting breed in species" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -2,7 +2,6 @@ package com.vsu.app.controller;
 
 import com.vsu.app.service.BreedService;
 import lombok.AllArgsConstructor;
-import org.springframework.context.annotation.Scope;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
