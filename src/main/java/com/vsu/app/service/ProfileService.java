@@ -33,7 +33,7 @@ public class ProfileService {
     }
 
     public List<ProfileDto> getAll(Long admin_id) throws UnauthorizedAccessException {
-        if (!checkAdminRole(admin_id)){
+        if (!isAdmin(admin_id)){
             throw new UnauthorizedAccessException("Only administrator can get list of all users");
         }
 
@@ -43,7 +43,7 @@ public class ProfileService {
     }
 
     public boolean delete(Long id, Long admin_id) throws UnauthorizedAccessException {
-        if(!checkAdminRole(admin_id)){
+        if(!isAdmin(admin_id)){
             throw new UnauthorizedAccessException("Only administrator can delete users");
         }
 
@@ -51,7 +51,7 @@ public class ProfileService {
     }
 
     public ProfileDto edit(Long id, Long admin_id, EditProfileRequest editProfileRequest) throws UnauthorizedAccessException {
-        if(!checkAdminRole(admin_id)){
+        if(!isAdmin(admin_id)){
             throw new UnauthorizedAccessException("Only administrator can delete users");
         }
 
@@ -72,7 +72,7 @@ public class ProfileService {
     }
 
     //TODO: оставить так или сделать JWT?
-    public boolean checkAdminRole(Long admin_id){
+    public boolean isAdmin(Long admin_id){
         Profile admin = profileRepository.getById(admin_id);
         return admin != null && admin.getRole() == Role.ADMINISTRATOR;
     }
