@@ -18,7 +18,6 @@ public class BreedRepository {
     public static final String SELECT_BY_SPECIES_QUERY = "SELECT id, name, species_id FROM breed WHERE species_id = ?";
     private JdbcTemplate jdbcTemplate;
 
-    //TODO: как сделать обработку неуникальной строки
     public boolean create(Long speciesId, String breedName) {
         return jdbcTemplate.update(INSERT_QUERY,breedName,speciesId) == 1;
     }

@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 public class AdminSpeciesController {
     private SpeciesService speciesService;
 
-    //TODO: добавить обработку повторяющихся значений
     @PostMapping
     public boolean addSpecies(@PathVariable("adminId") Long adminId, @RequestParam String speciesName) throws UnauthorizedAccessException {
         return speciesService.add(adminId,speciesName);

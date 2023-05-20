@@ -17,6 +17,7 @@ public class SQLExceptionHandler {
         String message = e.getMessage();
         String wrongValues;
         switch (e.getSQLState()){
+            //TODO: как делать уникальные сообщения для разных контроллеров (выкидывать здесь другой exception и отлавливать в контроллере???)
             case WRONG_FOREIGN_KEY:
                 wrongValues = message.substring(message.indexOf("("),message.lastIndexOf(")")+1);
                 return ResponseEntity.badRequest().body("Wrong foreign key: " + wrongValues + " doesn't exist");
