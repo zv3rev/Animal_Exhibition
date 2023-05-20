@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="Extracted AdminSpeciesController">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/exception/NotUniqueException.java" afterDir="false" />
+    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="Added check for wrong foreign key in BreedService">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/handler/SQLExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/AdminBreedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/AdminBreedController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/BreedRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/BreedRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/SpeciesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/SpeciesRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/BreedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/BreedService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/SpeciesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/SpeciesService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +122,8 @@
       <workItem from="1683369321240" duration="7092000" />
       <workItem from="1683961161290" duration="529000" />
       <workItem from="1684348004200" duration="5593000" />
-      <workItem from="1684443817892" duration="12734000" />
+      <workItem from="1684443817892" duration="14007000" />
+      <workItem from="1684567217054" duration="2106000" />
     </task>
     <task id="LOCAL-00001" summary="Added Entity-classes">
       <created>1682265110194</created>
@@ -212,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684528463222</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added check for wrong foreign key in BreedService">
+      <created>1684530819793</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684530819793</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +270,8 @@
     <MESSAGE value="Added deleting breed" />
     <MESSAGE value="Added getting breed in species" />
     <MESSAGE value="Extracted AdminSpeciesController" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extracted AdminSpeciesController" />
+    <MESSAGE value="Added check for wrong foreign key in BreedService" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added check for wrong foreign key in BreedService" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -275,7 +280,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/vsu/app/repository/BreedRepository.java</url>
           <line>46</line>
           <properties class="com.vsu.app.repository.BreedRepository" method="getBySpecies">
-            <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />

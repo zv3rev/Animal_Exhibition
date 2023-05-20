@@ -15,15 +15,11 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class BreedService {
     private BreedRepository breedRepository;
-    private SpeciesService speciesService;
     private ProfileService profileService;
 
-    public boolean add(Long adminId, Long speciesId, String breedName) throws UnauthorizedAccessException, IncorrectAttributeException {
+    public boolean add(Long adminId, Long speciesId, String breedName) throws UnauthorizedAccessException {
         if (!profileService.isAdmin(adminId)){
             throw new UnauthorizedAccessException("Only admin can add breeds");
-        }
-        if (speciesService.getById(speciesId) == null){
-            throw new IncorrectAttributeException("There is no species with specified id");
         }
         return breedRepository.create(speciesId,breedName);
     }
