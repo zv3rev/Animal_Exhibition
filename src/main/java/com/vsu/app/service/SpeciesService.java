@@ -1,11 +1,13 @@
 package com.vsu.app.service;
 
+import com.vsu.app.entity.Species;
 import com.vsu.app.exception.UnauthorizedAccessException;
 import com.vsu.app.repository.SpeciesRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor
@@ -29,6 +31,10 @@ public class SpeciesService {
     }
 
     public List<String> getAll() {
-        return speciesRepository.getAll();
+        return speciesRepository.getAll().stream().map(Species::getName).collect(Collectors.toList());
+    }
+
+    public Species getById(Long id){
+        return speciesRepository.get(id);
     }
 }

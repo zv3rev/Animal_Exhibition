@@ -13,7 +13,7 @@ public class AdminBreedController {
     private BreedService breedService;
 
     @PostMapping
-    public boolean addBreed(@PathVariable("adminId") Long adminId, @PathVariable("speciesId") Long speciesId, @RequestParam("breedName") String breedName) throws UnauthorizedAccessException {
+    public boolean addBreed(@PathVariable("adminId") Long adminId, @PathVariable("speciesId") Long speciesId, @RequestParam("breedName") String breedName) throws UnauthorizedAccessException, IncorrectAttributeException {
         return breedService.add(adminId,speciesId,breedName);
     }
 

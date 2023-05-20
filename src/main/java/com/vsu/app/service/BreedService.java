@@ -21,7 +21,6 @@ public class BreedService {
         if (!profileService.isAdmin(adminId)){
             throw new UnauthorizedAccessException("Only admin can add breeds");
         }
-
         return breedRepository.create(speciesId,breedName);
     }
 
