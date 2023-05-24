@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.logging.Level;
 import java.util.stream.Collectors;
 
@@ -21,7 +22,7 @@ public class GlobalValidationExceptionHandler {
                 .collect(Collectors.toList());
         log.log(Level.INFO,
                 String.format("Bind exception in: %s, error count: %d.",
-                    e.getBindingResult().getTarget().toString(),
+                    Objects.requireNonNull(e.getBindingResult().getTarget()),
                     e.getAllErrors().size()));
         return ResponseEntity.badRequest().body(errors);
     }

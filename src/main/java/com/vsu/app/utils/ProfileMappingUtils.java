@@ -1,4 +1,4 @@
-package com.vsu.app.utilities;
+package com.vsu.app.utils;
 
 import com.vsu.app.dto.ProfileDto;
 import com.vsu.app.entity.Profile;

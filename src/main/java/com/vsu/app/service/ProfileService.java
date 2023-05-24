@@ -7,7 +7,7 @@ import com.vsu.app.exception.UnauthorizedAccessException;
 import com.vsu.app.repository.ProfileRepository;
 import com.vsu.app.request.CreateProfileRequest;
 import com.vsu.app.request.EditProfileRequest;
-import com.vsu.app.utilities.ProfileMappingUtils;
+import com.vsu.app.utils.ProfileMappingUtils;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

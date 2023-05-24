@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="Added check for wrong foreign key in BreedService">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/handler/SQLExceptionHandler.java" afterDir="false" />
+    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="Editing TODOs">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/PetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/dto/PetDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/PetRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/PetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/utils/PetMappingUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/handler/GlobalValidationExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/handler/GlobalValidationExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/ProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/ProfileRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/BreedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/BreedService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/CriteriaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/CriteriaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/SpeciesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/SpeciesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/utilities/CriteriaMappingUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/utils/CriteriaMappingUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/utilities/ProfileMappingUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/utils/ProfileMappingUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="feature/refactorThings" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,42 +60,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/YandexDisk/Documents/ПММ 3/Java/Animal_Exhibition&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;44e68ee0995f65320983df8ffc0beb8c&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/YandexDisk/Documents/ПММ 3/Java/Animal_Exhibition",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "spring.configuration.checksum": "44e68ee0995f65320983df8ffc0beb8c",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.vsu.app.exception" />
-      <recent name="com.vsu.app.repository" />
+      <recent name="com.vsu.app.utilities" />
       <recent name="com.vsu.app.service" />
+      <recent name="com.vsu.app.repository" />
       <recent name="com.vsu.app.dto" />
-      <recent name="com.vsu.app.request" />
+      <recent name="com.vsu.app.exception" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\YandexDisk\Documents\ПММ 3\Java\Animal_Exhibition\src\main\webapp\WEB-INF\jsp" />
@@ -124,6 +135,9 @@
       <workItem from="1684348004200" duration="5593000" />
       <workItem from="1684443817892" duration="14007000" />
       <workItem from="1684567217054" duration="2106000" />
+      <workItem from="1684654807261" duration="986000" />
+      <workItem from="1684655960568" duration="57000" />
+      <workItem from="1684947734827" duration="3981000" />
     </task>
     <task id="LOCAL-00001" summary="Added Entity-classes">
       <created>1682265110194</created>
@@ -223,15 +237,6 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -248,6 +253,15 @@
                 </option>
               </RecentGroup>
             </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
           </value>
         </entry>
       </map>
@@ -276,13 +290,10 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/vsu/app/repository/BreedRepository.java</url>
-          <line>46</line>
-          <properties class="com.vsu.app.repository.BreedRepository" method="getBySpecies">
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/vsu/app/service/SpeciesService.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

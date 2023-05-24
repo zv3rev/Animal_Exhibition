@@ -74,8 +74,8 @@ public class ProfileRepository {
         }
     }
 
-    public boolean delete(Long id){
-        return jdbcTemplate.update(DELETE_BY_ID_QUERY,id)==1;
+    public boolean delete(Long id) {
+        return jdbcTemplate.update(DELETE_BY_ID_QUERY, id) == 1;
     }
 
     public boolean update(Profile profile){

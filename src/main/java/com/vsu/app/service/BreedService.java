@@ -6,6 +6,7 @@ import com.vsu.app.exception.UnauthorizedAccessException;
 import com.vsu.app.repository.BreedRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Objects;
@@ -13,6 +14,7 @@ import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor
+@Transactional
 public class BreedService {
     private BreedRepository breedRepository;
     private ProfileService profileService;

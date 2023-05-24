@@ -15,6 +15,7 @@ public class SpeciesService {
     private SpeciesRepository speciesRepository;
     private ProfileService profileService;
 
+    //TODO: optimistic pesimistic lock
     public boolean add(Long adminId, String name) throws UnauthorizedAccessException {
         if (!profileService.isAdmin(adminId)){
             throw new UnauthorizedAccessException("Only administrator can add species");
