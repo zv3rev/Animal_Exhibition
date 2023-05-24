@@ -9,8 +9,8 @@ import java.sql.Date;
 @AllArgsConstructor
 public class PetDto {
     private Long id;
-    private Long owner_id;
-    private Long breed_id;
+    private Long ownerId;
+    private Long breedId;
     private String nickname;
     private Date birthday;
 }
