@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/handler/EmptyResultDataAccessExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/PetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/PetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/PetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/PetRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/PetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/PetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/ProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/ProfileRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +125,7 @@
       <workItem from="1684654807261" duration="986000" />
       <workItem from="1684655960568" duration="57000" />
       <workItem from="1684947734827" duration="8913000" />
-      <workItem from="1685003933123" duration="5238000" />
+      <workItem from="1685003933123" duration="5802000" />
     </task>
     <task id="LOCAL-00001" summary="Added Entity-classes">
       <created>1682265110194</created>
@@ -236,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684958275594</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added deleting pets">
+      <created>1685009876754</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1685009876754</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +297,8 @@
     <MESSAGE value="Added check for wrong foreign key in BreedService" />
     <MESSAGE value="Added getting user pets" />
     <MESSAGE value="Added adding pets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added adding pets" />
+    <MESSAGE value="Added deleting pets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added deleting pets" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
