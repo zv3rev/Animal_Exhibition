@@ -1,6 +1,7 @@
 package com.vsu.app.controller;
 
 import com.vsu.app.dto.PetDto;
+import com.vsu.app.exception.IncorrectAttributeException;
 import com.vsu.app.request.CreatePetRequest;
 import com.vsu.app.service.PetService;
 import lombok.AllArgsConstructor;
@@ -34,4 +35,10 @@ public class PetController {
                                 .toUri())
                 .build();
     }
+
+    @DeleteMapping("/{petId}")
+    public boolean deletePet(@PathVariable("userId") Long userId, @PathVariable("petId") Long petId) throws IncorrectAttributeException {
+        return petService.delete(userId, petId);
+    }
+
 }
