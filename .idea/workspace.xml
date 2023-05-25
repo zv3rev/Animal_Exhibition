@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/ProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/ProfileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/AdminExhibitionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/ExhibitionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/dto/ExhibitionDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/ExhibitionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/request/CreateExhibitionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/request/EditExhibitionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ExhibitionService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,11 +84,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.vsu.app.request" />
-      <recent name="com.vsu.app.utilities" />
-      <recent name="com.vsu.app.service" />
       <recent name="com.vsu.app.repository" />
+      <recent name="com.vsu.app.request" />
       <recent name="com.vsu.app.dto" />
+      <recent name="com.vsu.app.service" />
+      <recent name="com.vsu.app.utilities" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\YandexDisk\Documents\ПММ 3\Java\Animal_Exhibition\src\main\webapp\WEB-INF\jsp" />
@@ -125,7 +131,7 @@
       <workItem from="1684654807261" duration="986000" />
       <workItem from="1684655960568" duration="57000" />
       <workItem from="1684947734827" duration="8913000" />
-      <workItem from="1685003933123" duration="5802000" />
+      <workItem from="1685003933123" duration="11612000" />
     </task>
     <task id="LOCAL-00001" summary="Added Entity-classes">
       <created>1682265110194</created>
@@ -239,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685009876754</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Removed all useless catches">
+      <created>1685010429734</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1685010429734</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +311,8 @@
     <MESSAGE value="Added getting user pets" />
     <MESSAGE value="Added adding pets" />
     <MESSAGE value="Added deleting pets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added deleting pets" />
+    <MESSAGE value="Removed all useless catches" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed all useless catches" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
