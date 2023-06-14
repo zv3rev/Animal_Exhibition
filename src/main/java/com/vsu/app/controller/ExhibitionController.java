@@ -5,28 +5,31 @@ import com.vsu.app.service.ExhibitionService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.List;
 
 @RestController
-@AllArgsConstructor
 @RequestMapping("/exhibitions")
+@AllArgsConstructor
 public class ExhibitionController {
-    private ExhibitionService exhibitionService;
 
-    @GetMapping
-    public List<ExhibitionDto> getAllExhibitions(){
-        throw new NotImplementedException();
+    private final ExhibitionService exhibitionService;
+
+    @GetMapping("/{exhibitionId}")
+    public ResponseEntity<ExhibitionDto> getExhibitionById(@PathVariable("exhibitionId") Long exhibitionId) {
+        ExhibitionDto exhibition = exhibitionService.getExhibitionById(exhibitionId);
+        return ResponseEntity.ok(exhibition);
     }
 
     @GetMapping
-    public List<ExhibitionDto> getAllExhibitionsInSpecies(@RequestParam("speciesId") Long speciesId){
-        throw new NotImplementedException();
+    public ResponseEntity<List<ExhibitionDto>> getAllExhibitions() {
+        List<ExhibitionDto> exhibitions = exhibitionService.getAllExhibitions();
+        return ResponseEntity.ok(exhibitions);
     }
 
-    @PostMapping("/{exhibitionId}")
-    public ResponseEntity registerForExhibition(@PathVariable("exhibitionId") Long exhibitionId, @RequestParam("userId") Long userId, @RequestParam("petId") Long petId){
-        throw new NotImplementedException();
+    @GetMapping(params = "speciesId")
+    public ResponseEntity<List<ExhibitionDto>> getExhibitionsBySpeciesId(@RequestParam("speciesId") Long speciesId) {
+        List<ExhibitionDto> exhibitions = exhibitionService.getExhibitionsBySpeciesId(speciesId);
+        return ResponseEntity.ok(exhibitions);
     }
 }

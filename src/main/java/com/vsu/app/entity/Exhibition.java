@@ -13,6 +13,6 @@ public class Exhibition {
     private String description;
     private Date start;
     private Date end;
-    private Long species_id;
-    private Double enter_price;
+    private Long speciesId;
+    private Double enterPrice;
 }

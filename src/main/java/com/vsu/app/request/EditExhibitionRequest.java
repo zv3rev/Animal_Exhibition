@@ -16,7 +16,7 @@ public class EditExhibitionRequest {
     @Future( message = "Exhibition should ends in the future")
     private Date end;
     @Positive(message = "Species id can't be negative")
-    private Long species_id;
+    private Long speciesId;
     @PositiveOrZero(message = "Entry price can't be negative")
-    private Double enter_price;
+    private Double enterPrice;
 }
