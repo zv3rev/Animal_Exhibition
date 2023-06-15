@@ -71,11 +71,14 @@ public class ProfileService {
         }
     }
 
-    //TODO: оставить так или сделать JWT?
     public boolean isAdmin(Long admin_id){
         Profile admin = profileRepository.getById(admin_id);
         return admin != null && admin.getRole() == Role.ADMINISTRATOR;
     }
 
+    public boolean isJudge(Long admin_id){
+        Profile admin = profileRepository.getById(admin_id);
+        return admin != null && admin.getRole() == Role.JUDGE;
+    }
 
 }

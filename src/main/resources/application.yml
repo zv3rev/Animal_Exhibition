@@ -6,6 +6,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/animal_exhibition
     username: postgres
     password: postgres
+
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
