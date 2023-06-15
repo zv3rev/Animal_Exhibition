@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="Added required classes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/utils/ExhibitionMappingUtils.java" afterDir="false" />
+    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="Added interaction methods for judge">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/AdminJudgeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/JudgeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/JudgeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/AdminExhibitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/AdminExhibitionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/ExhibitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/ExhibitionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/dto/ExhibitionDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/dto/ExhibitionDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/entity/Exhibition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/entity/Exhibition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/ExhibitionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/ExhibitionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/request/CreateExhibitionRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/request/CreateExhibitionRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/request/EditExhibitionRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/request/EditExhibitionRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ExhibitionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ExhibitionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,10 +83,10 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.vsu.app.service" />
+      <recent name="com.vsu.app.dto" />
       <recent name="com.vsu.app.request" />
       <recent name="com.vsu.app.repository" />
-      <recent name="com.vsu.app.dto" />
-      <recent name="com.vsu.app.service" />
       <recent name="com.vsu.app.utilities" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -140,6 +136,7 @@
       <workItem from="1686056632434" duration="173000" />
       <workItem from="1686057171485" duration="3474000" />
       <workItem from="1686749391644" duration="5399000" />
+      <workItem from="1686841224442" duration="4056000" />
     </task>
     <task id="LOCAL-00001" summary="Added Entity-classes">
       <created>1682265110194</created>
@@ -328,7 +325,8 @@
     <MESSAGE value="Added deleting pets" />
     <MESSAGE value="Removed all useless catches" />
     <MESSAGE value="Added required classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added required classes" />
+    <MESSAGE value="Added interaction methods for judge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added interaction methods for judge" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
