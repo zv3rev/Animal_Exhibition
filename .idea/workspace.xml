@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="Added interaction methods for judge">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/AdminJudgeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/JudgeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/JudgeService.java" afterDir="false" />
+    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/AdminExhibitionCriteriaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/ExhibitionCriteriaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ExhibitionCriteriaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ProfileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +134,7 @@
       <workItem from="1686056632434" duration="173000" />
       <workItem from="1686057171485" duration="3474000" />
       <workItem from="1686749391644" duration="5399000" />
-      <workItem from="1686841224442" duration="4056000" />
+      <workItem from="1686841224442" duration="7285000" />
     </task>
     <task id="LOCAL-00001" summary="Added Entity-classes">
       <created>1682265110194</created>
@@ -264,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685020457147</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added interaction methods for judge">
+      <created>1686846803437</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1686846803437</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
