@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="Added new REST-CONTROLLERS">
+    <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/AdminExhibitionCriteriaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/ExhibitionCriteriaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ExhibitionCriteriaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ProfileService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feature/refactorThings" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,6 +58,7 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/YandexDisk/Documents/ПММ 3/Java/Animal_Exhibition&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -77,6 +80,13 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.vsu.app.service" />
+      <recent name="com.vsu.app.dto" />
+      <recent name="com.vsu.app.request" />
+      <recent name="com.vsu.app.repository" />
+      <recent name="com.vsu.app.utilities" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\YandexDisk\Documents\ПММ 3\Java\Animal_Exhibition\src\main\webapp\WEB-INF\jsp" />
       <recent name="C:\YandexDisk\Documents\ПММ 3\Java\Animal_Exhibition\src\main\webapp\WEB-INF\\" />
@@ -113,6 +123,18 @@
       <workItem from="1683369321240" duration="7092000" />
       <workItem from="1683961161290" duration="529000" />
       <workItem from="1684348004200" duration="5593000" />
+      <workItem from="1684443817892" duration="14007000" />
+      <workItem from="1684567217054" duration="2106000" />
+      <workItem from="1684654807261" duration="986000" />
+      <workItem from="1684655960568" duration="57000" />
+      <workItem from="1684947734827" duration="8913000" />
+      <workItem from="1685003933123" duration="11705000" />
+      <workItem from="1685187741790" duration="1810000" />
+      <workItem from="1685457950163" duration="593000" />
+      <workItem from="1686056632434" duration="173000" />
+      <workItem from="1686057171485" duration="3474000" />
+      <workItem from="1686749391644" duration="5399000" />
+      <workItem from="1686841224442" duration="7285000" />
     </task>
     <task id="LOCAL-00001" summary="Added Entity-classes">
       <created>1682265110194</created>
@@ -142,36 +164,150 @@
       <option name="project" value="LOCAL" />
       <updated>1683965493014</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added RequestBody to SignUpController">
+      <created>1684411566972</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684411566972</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added creating species">
+      <created>1684413039704</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684413039704</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added delete species">
+      <created>1684413935616</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684413935616</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added get all species">
+      <created>1684414966754</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684414966754</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added adding breed">
+      <created>1684416981065</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684416981065</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added deleting breed">
+      <created>1684420226037</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684420226037</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added getting breed in species">
+      <created>1684527638836</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684527638836</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Extracted AdminSpeciesController">
+      <created>1684528463222</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684528463222</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added check for wrong foreign key in BreedService">
+      <created>1684530819793</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684530819793</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added getting user pets">
+      <created>1684953521187</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1684953521187</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added adding pets">
+      <created>1684958275594</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1684958275594</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added deleting pets">
+      <created>1685009876754</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1685009876754</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Removed all useless catches">
+      <created>1685010429734</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1685010429734</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added required classes">
+      <created>1685020457147</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1685020457147</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added interaction methods for judge">
+      <created>1686846803437</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1686846803437</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="develop" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="feature/addSpecies" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="develop" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
@@ -180,6 +316,32 @@
     <MESSAGE value="Added validation for the registration form" />
     <MESSAGE value="Removed JSP-pages" />
     <MESSAGE value="Added new REST-CONTROLLERS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new REST-CONTROLLERS" />
+    <MESSAGE value="Added RequestBody to SignUpController" />
+    <MESSAGE value="Added creating species" />
+    <MESSAGE value="Added delete species" />
+    <MESSAGE value="Added get all species" />
+    <MESSAGE value="Added adding breed" />
+    <MESSAGE value="Added deleting breed" />
+    <MESSAGE value="Added getting breed in species" />
+    <MESSAGE value="Extracted AdminSpeciesController" />
+    <MESSAGE value="Added check for wrong foreign key in BreedService" />
+    <MESSAGE value="Added getting user pets" />
+    <MESSAGE value="Added adding pets" />
+    <MESSAGE value="Added deleting pets" />
+    <MESSAGE value="Removed all useless catches" />
+    <MESSAGE value="Added required classes" />
+    <MESSAGE value="Added interaction methods for judge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added interaction methods for judge" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/vsu/app/service/SpeciesService.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

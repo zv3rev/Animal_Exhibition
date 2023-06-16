@@ -6,7 +6,7 @@ import com.vsu.app.exception.UnauthorizedAccessException;
 import com.vsu.app.repository.CriteriaRepository;
 import com.vsu.app.request.CreateCriteriaRequest;
 import com.vsu.app.request.EditCriteriaRequest;
-import com.vsu.app.utilities.CriteriaMappingUtils;
+import com.vsu.app.utils.CriteriaMappingUtils;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -18,14 +18,14 @@ public class CriteriaService {
     private ProfileService profileService;
 
     public boolean add(Long adminId, CreateCriteriaRequest request) throws UnauthorizedAccessException {
-        if(!profileService.checkAdminRole(adminId)){
+        if(!profileService.isAdmin(adminId)){
             throw new UnauthorizedAccessException("Only admin can add criteria");
         }
         return criteriaRepository.create(criteriaMappingUtils.mapToEntity(request));
     }
 
     public boolean delete(Long adminId, Long criteriaId) throws UnauthorizedAccessException {
-        if (!profileService.checkAdminRole(adminId)){
+        if (!profileService.isAdmin(adminId)){
             throw new UnauthorizedAccessException("Only admin can delete criteria");
         }
 
@@ -33,7 +33,7 @@ public class CriteriaService {
     }
 
     public CriteriaDto edit(Long adminId, Long criteriaId, EditCriteriaRequest editCriteriaRequest) throws UnauthorizedAccessException {
-        if (!profileService.checkAdminRole(adminId)){
+        if (!profileService.isAdmin(adminId)){
             throw new UnauthorizedAccessException("Only admin can delete criteria ");
         }
 

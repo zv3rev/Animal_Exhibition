@@ -34,33 +34,17 @@ public class ProfileRepository {
     }
 
     public Profile getByUsername(String username){
-        Profile profile;
-        try {
-            profile = jdbcTemplate.queryForObject(
-                    SELECT_BY_USERNAME_QUERY,
-                    (rs, row) -> buildProfile(rs),
-                    username);
-        }
-        catch (EmptyResultDataAccessException e){
-            return null;
-        }
-
-        return profile;
+        return jdbcTemplate.queryForObject(
+                SELECT_BY_USERNAME_QUERY,
+                (rs, row) -> buildProfile(rs),
+                username);
     }
 
     public Profile getById(Long id){
-        Profile profile;
-        try {
-            profile = jdbcTemplate.queryForObject(
-                    SELECT_BY_ID_QUERY,
-                    (rs, row) -> buildProfile(rs),
-                    id);
-        }
-        catch (EmptyResultDataAccessException e){
-            return null;
-        }
-
-        return profile;
+        return jdbcTemplate.queryForObject(
+                SELECT_BY_ID_QUERY,
+                (rs, row) -> buildProfile(rs),
+                id);
     }
 
     public List<Profile> getAllUsers(){
@@ -74,8 +58,8 @@ public class ProfileRepository {
         }
     }
 
-    public boolean delete(Long id){
-        return jdbcTemplate.update(DELETE_BY_ID_QUERY,id)==1;
+    public boolean delete(Long id) {
+        return jdbcTemplate.update(DELETE_BY_ID_QUERY, id) == 1;
     }
 
     public boolean update(Profile profile){

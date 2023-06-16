@@ -7,7 +7,7 @@ import com.vsu.app.exception.UnauthorizedAccessException;
 import com.vsu.app.repository.ProfileRepository;
 import com.vsu.app.request.CreateProfileRequest;
 import com.vsu.app.request.EditProfileRequest;
-import com.vsu.app.utilities.ProfileMappingUtils;
+import com.vsu.app.utils.ProfileMappingUtils;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -33,7 +33,7 @@ public class ProfileService {
     }
 
     public List<ProfileDto> getAll(Long admin_id) throws UnauthorizedAccessException {
-        if (!checkAdminRole(admin_id)){
+        if (!isAdmin(admin_id)){
             throw new UnauthorizedAccessException("Only administrator can get list of all users");
         }
 
@@ -43,7 +43,7 @@ public class ProfileService {
     }
 
     public boolean delete(Long id, Long admin_id) throws UnauthorizedAccessException {
-        if(!checkAdminRole(admin_id)){
+        if(!isAdmin(admin_id)){
             throw new UnauthorizedAccessException("Only administrator can delete users");
         }
 
@@ -51,7 +51,7 @@ public class ProfileService {
     }
 
     public ProfileDto edit(Long id, Long admin_id, EditProfileRequest editProfileRequest) throws UnauthorizedAccessException {
-        if(!checkAdminRole(admin_id)){
+        if(!isAdmin(admin_id)){
             throw new UnauthorizedAccessException("Only administrator can delete users");
         }
 
@@ -71,11 +71,14 @@ public class ProfileService {
         }
     }
 
-    //TODO: нужно ли выносить в отдельный класс, и если да то какой
-    public boolean checkAdminRole(Long admin_id){
+    public boolean isAdmin(Long admin_id){
         Profile admin = profileRepository.getById(admin_id);
         return admin != null && admin.getRole() == Role.ADMINISTRATOR;
     }
 
+    public boolean isJudge(Long admin_id){
+        Profile admin = profileRepository.getById(admin_id);
+        return admin != null && admin.getRole() == Role.JUDGE;
+    }
 
 }
