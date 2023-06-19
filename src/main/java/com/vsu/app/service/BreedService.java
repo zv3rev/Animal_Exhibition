@@ -1,5 +1,6 @@
 package com.vsu.app.service;
 
+import com.vsu.app.dto.BreedDto;
 import com.vsu.app.entity.Breed;
 import com.vsu.app.exception.IncorrectAttributeException;
 import com.vsu.app.exception.UnauthorizedAccessException;
@@ -40,5 +41,10 @@ public class BreedService {
 
     public List<String> getAllinSpecies(Long speciesId) {
         return  breedRepository.getBySpecies(speciesId).stream().map(Breed::getName).collect(Collectors.toList());
+    }
+
+    public BreedDto getById(Long id){
+        Breed breed = breedRepository.getById(id);
+        return new BreedDto(breed.getId(),breed.getName(),breed.getSpecies_id());
     }
 }

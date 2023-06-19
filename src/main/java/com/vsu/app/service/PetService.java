@@ -44,4 +44,8 @@ public class PetService {
 
         return petRepository.delete(petId);
     }
+
+    public PetDto getById(Long petId) {
+        return petMappingUtils.toDto(petRepository.getById(petId));
+    }
 }

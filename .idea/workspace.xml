@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/AdminExhibitionCriteriaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/ExhibitionCriteriaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ExhibitionCriteriaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/ExhibitionPetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/dto/BreedDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/ExhibitionPetRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ExhibitionPetService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/BreedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/BreedService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/PetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/PetService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,10 +84,10 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.vsu.app.service" />
       <recent name="com.vsu.app.dto" />
-      <recent name="com.vsu.app.request" />
       <recent name="com.vsu.app.repository" />
+      <recent name="com.vsu.app.service" />
+      <recent name="com.vsu.app.request" />
       <recent name="com.vsu.app.utilities" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -135,6 +138,7 @@
       <workItem from="1686057171485" duration="3474000" />
       <workItem from="1686749391644" duration="5399000" />
       <workItem from="1686841224442" duration="7285000" />
+      <workItem from="1687188119506" duration="5642000" />
     </task>
     <task id="LOCAL-00001" summary="Added Entity-classes">
       <created>1682265110194</created>
