@@ -15,7 +15,7 @@ import java.util.List;
 public class JudgeRepository {
     private JdbcTemplate jdbcTemplate;
 
-    private static final String SELECT_ALL_BY_EXHIBITION_ID_QUERY = "SELECT jae.id, jae.user_id, jae.exhibition_id, p.id, p.username, p.password, p.fio, p.email, p.phone, p.role FROM judge_at_exhibition jae JOIN profile p ON jae.user_id = p.id WHERE exhibition_id = ?";
+    private static final String SELECT_ALL_BY_EXHIBITION_ID_QUERY = "SELECT jae.id, jae.user_id, jae.exhibition_id, p.id p_id, p.username p_username, p.password p_password, p.fio p_fio, p.email p_email, p.phone p_phone, p.role p_role FROM judge_at_exhibition jae JOIN profile p ON jae.user_id = p.id WHERE exhibition_id = ?";
 
     private static final String INSERT_QUERY = "INSERT INTO judge_at_exhibition (user_id, exhibition_id) VALUES (?, ?) RETURNING id";
     private static final String DELETE_QUERY = "DELETE FROM judge_at_exhibition WHERE user_id = ? AND exhibition_id = ?";
@@ -34,13 +34,13 @@ public class JudgeRepository {
 
     private static Profile buildProfile(ResultSet rs) throws SQLException {
         return Profile.builder()
-                .id(rs.getLong(1))
-                .username(rs.getString(2))
-                .password(rs.getString(3))
-                .fio(rs.getString(4))
-                .email(rs.getString(5))
-                .phone(rs.getLong(6))
-                .role(Role.valueOf(rs.getString(7)))
+                .id(rs.getLong("p_id"))
+                .username(rs.getString("p_username"))
+                .password(rs.getString("p_password"))
+                .fio(rs.getString("p_fio"))
+                .email(rs.getString("p_email"))
+                .phone(rs.getLong("p_phone"))
+                .role(Role.valueOf(rs.getString("p_role")))
                 .build();
     }
 }

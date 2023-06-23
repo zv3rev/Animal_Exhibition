@@ -1,16 +1,16 @@
 package com.vsu.app.request;
 
 import lombok.Data;
+import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.Range;
 
-import javax.validation.constraints.Max;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 @Data
 public class CreateCriteriaRequest {
     @NotBlank(message = "Name can't be blank")
-    @Max(30)
+    @Length(max = 30)
     private String name;
     @NotNull(message = "Description can't be null")
     private String description;

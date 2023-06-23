@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ecc5686-662b-42b8-b1a7-46aa85afc7c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/ExhibitionPetController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/dto/BreedDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/ExhibitionPetRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/ExhibitionPetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/controller/JudgeScoreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/dto/AnimalScoreDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/AnimalScoreRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/request/CreateScoreRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/AnimalScoreService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/utils/AnimalScoreMappingUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/BreedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/BreedService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/PetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/service/PetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/ExhibitionPetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/ExhibitionPetRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/JudgeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/repository/JudgeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vsu/app/request/CreateCriteriaRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vsu/app/request/CreateCriteriaRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,11 +87,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.vsu.app.dto" />
-      <recent name="com.vsu.app.repository" />
-      <recent name="com.vsu.app.service" />
-      <recent name="com.vsu.app.request" />
       <recent name="com.vsu.app.utilities" />
+      <recent name="com.vsu.app.repository" />
+      <recent name="com.vsu.app.request" />
+      <recent name="com.vsu.app.service" />
+      <recent name="com.vsu.app.dto" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\YandexDisk\Documents\ПММ 3\Java\Animal_Exhibition\src\main\webapp\WEB-INF\jsp" />
@@ -138,7 +141,14 @@
       <workItem from="1686057171485" duration="3474000" />
       <workItem from="1686749391644" duration="5399000" />
       <workItem from="1686841224442" duration="7285000" />
-      <workItem from="1687188119506" duration="5642000" />
+      <workItem from="1687188119506" duration="8314000" />
+      <workItem from="1687253694571" duration="4651000" />
+      <workItem from="1687364274847" duration="25000" />
+      <workItem from="1687364363076" duration="6929000" />
+      <workItem from="1687374330943" duration="600000" />
+      <workItem from="1687424692119" duration="2177000" />
+      <workItem from="1687444199977" duration="590000" />
+      <workItem from="1687529307533" duration="4239000" />
     </task>
     <task id="LOCAL-00001" summary="Added Entity-classes">
       <created>1682265110194</created>
@@ -273,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686846803437</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added interaction methods for pets on exhibition">
+      <created>1687194126842</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1687194126842</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +352,8 @@
     <MESSAGE value="Removed all useless catches" />
     <MESSAGE value="Added required classes" />
     <MESSAGE value="Added interaction methods for judge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added interaction methods for judge" />
+    <MESSAGE value="Added interaction methods for pets on exhibition" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added interaction methods for pets on exhibition" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
